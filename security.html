@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>1091 資安報告</title>
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+		<style>
+			
+		</style>
+		<!-- Bootstrap -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<!-- jQuery.js v1.11.1 -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+		<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/jquery.easings.min.js"></script>
+
+		<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/scrolloverflow.min.js"></script>
+
+		<!-- fullPage.js v2.9.5 -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css" rel="stylesheet"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+	</head>
+	<body>
+		<div id="main">
+
+			<div class="section text-center">
+				<img src="img/img.001.png"></img>
+			</div>
+			<div class="section text-center">
+				<img src="img/img.002.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.003.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.004.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.005.png"></img>
+			</div>
+			<div class="section">
+				<div class="section text-center">
+				<div style="display:inline-flex;">
+					<input style="width:500px;" id='inputTextBox1' type='text' placeholder="請輸入...(innerText)"> </input>
+					<button onclick="changeInput()">送出</button>
+				</div>
+				<h3 id="inputText1"></h3>
+				<div style="display:inline-flex;">
+					<input style="width:500px;" id='inputTextBox2' type='text' value="<script>alert('123');</script>"></input>
+					<button onclick="alertClick()">送出</button>
+				</div>
+			</div>
+			</div>
+			<div class="section">
+				<img src="img/img.007.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.008.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.009.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.010.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.011.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.012.png"></img>
+			</div>
+			<div class="section text-center">
+				<h1>把&ltscript&gt 跟 &lt/script&gt替換掉</h1>
+				<div style="display:inline-flex;">
+					<input style="width:500px;" id='inputTextBox3' type='text' placeholder="請輸入...(innerText)" value="<script>alert('123');</script>"> </input>
+					<button onclick="replaceInput()">送出</button>
+				</div>
+				<h3 id="inputText3"></h3>
+			</div>
+			<div class="section text-center">
+				<h1>把&ltscript&gt 跟 &lt/script&gt替換掉</h1>
+				<div style="display:inline-flex;">
+					<input style="width:500px;" id='inputTextBox4' type='text' placeholder="請輸入...(innerText)" value="<scr<script>ipt>alert('123');</sc</script>ript>"> </input>
+					<button onclick="replaceInput2();alertClick();">送出</button>
+				</div>
+				<h3 id="inputText4"></h3>
+			</div>
+			<div class="section">
+				<img src="img/img.014.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.015.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.016.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.017.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.018.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.019.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.020.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.021.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.022.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.023.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.024.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.025.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.026.png"></img>
+			</div>
+			<div class="section text-center">
+				<h1>Regular expression</h1> 
+				<div class="container">
+				<div class="input_box must_fill">
+					<div class="title">大小寫字母、數字、底線、點replace(/[^\w_.]/g,'')</div>
+					<!-- <input type="text" class="textNumberLineDot" placeholder="請輸入"/>
+					<div class="hide textNumberLineDotLegalValue"></div> -->
+					<input type="text" onkeyup="value=value.replace(/[^\w_.]/g,'')" placeholder="Aa9_."/>
+				</div>
+				<div class="input_box">
+					<div class="title">數字replace(/\D/g,'')</div>
+					<!-- <input type="text" class="number" placeholder="請輸入"/>
+					<div class="hide numberLegalValue"></div> -->
+					<input type="text" onkeyup="value=value.replace(/\D/g,'')" placeholder="9"/>
+				</div>
+				<div class="input_box">
+					<div class="title">大小寫字母replace(/[^a-zA-Z]/g,'')</div>
+					<!-- <input type="text" class="text" placeholder="請輸入"/>
+					<div class="hide textLegalValue"></div> -->
+					<input type="text" onkeyup="value=value.replace(/[^a-zA-Z]/g,'')" placeholder="Aa"/>
+				</div>
+				<div class="input_box">
+					<div class="title">中文、大小寫字母、數字replace(/[^\w\u3400-\u4DBF\u3100-\u312F\u2E80-\u2FDF\u4E00-\u9FFF\uF900-\uFAFF\u02C9\u02CA\u02C7\u02CB\u02D9]/g, '')</div>
+					<!-- <input type="text" class="chineseTextNumber" placeholder="請輸入"/>
+					<div class="hide chineseTextNumberLegalValue"></div> -->
+					<input type="text" placeholder="中文Aa9" onkeyup="value=value.replace(/[^\w\u3400-\u4DBF\u3100-\u312F\u2E80-\u2FDF\u4E00-\u9FFF\uF900-\uFAFF\u02C9\u02CA\u02C7\u02CB\u02D9]/g, '')"/>
+				</div>
+				<div class="input_box">
+					<div class="title">0、1replace(/[^0-1]/g</div>
+					<!-- <input type="text" class="zeroOne" placeholder="請輸入"/>
+					<div class="hide zeroOneLegalValue"></div> -->
+					<input type="text" placeholder="01" onkeyup="value=value.replace(/[^0-1]/g,'')"/>
+				</div>
+			</div>
+			</div>
+			<div class="section">
+				<img src="img/img.027.png"></img>
+			</div>
+			<div class="section">
+				<img src="img/img.028.png"></img>
+			</div>
+
+		</div>
+	</div>
+	<script>
+		$("#main").fullpage({
+			navigation: true, // 顯示導行列
+			navigationPosition: "right" // 導行列位置
+		});
+
+		function changeInput() {
+			var elemBox = document.getElementById('inputTextBox1');
+			var elem = document.getElementById('inputText1');
+			elem.innerText = elemBox.value;
+		}
+
+		function replaceInput() {
+			var elemBox = document.getElementById('inputTextBox3');
+			var elem = document.getElementById('inputText3');
+			elemBox.value=elemBox.value.replace(/<script>/,'');
+			elemBox.value=elemBox.value.replace(/<\/script>/ig,'');
+			elem.innerText = elemBox.value;
+		}
+
+		function replaceInput2() {
+			var elemBox = document.getElementById('inputTextBox4');
+			var elem = document.getElementById('inputText4');
+			elemBox.value=elemBox.value.replace(/<script>/,'');
+			elemBox.value=elemBox.value.replace(/<\/script>/ig,'');
+			elem.innerText = elemBox.value;
+		}
+
+		function alertClick() {
+			alert("123");
+		}
+	</script>
+</body>
+</html>
